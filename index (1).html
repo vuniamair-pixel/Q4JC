@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JC Collection Q4 Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF6F0;--card:#fff;--ink:#1d2a44;--mute:#5d6882;--blue:#2354A8;--sun:#FFE83A;--org:#F47B3E;--sea:#CBF0FA;--line:#d9c9bd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a2e;--card:#18253f;--ink:#f1f4fb;--mute:#aab6d0;--blue:#7fa8ff;--sea:#1d3556;--line:#34466a}}
+:root[data-theme="dark"]{--bg:#101a2e;--card:#18253f;--ink:#f1f4fb;--mute:#aab6d0;--blue:#7fa8ff;--sea:#1d3556;--line:#34466a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Prompt",system-ui,"Noto Sans Thai",sans-serif;line-height:1.55}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 56px}
+header{background:var(--blue);color:#fff;border-radius:24px;padding:28px 22px;position:relative;overflow:hidden}
+header:after{content:"☀️";position:absolute;right:-6px;top:-14px;font-size:96px;opacity:.9}
+header small{letter-spacing:.2em;color:var(--sun);font-weight:500}
+header h1{margin:6px 0 4px;font-size:clamp(26px,6vw,40px);line-height:1.15}
+header p{margin:0;opacity:.9;max-width:34ch}
+.wave{display:block;width:100%;height:24px;margin-top:18px}
+.legend{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 4px;font-size:13px}
+.chip{padding:3px 11px;border-radius:99px;font-weight:500;font-size:12px;display:inline-block}
+.done{background:#d7f3dd;color:#1b6b34}.now{background:var(--org);color:#fff}.next{background:var(--sun);color:#4a3f00}
+.tl{position:relative;margin-top:18px;padding-left:34px}
+.tl:before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:4px;border-radius:4px;background:repeating-linear-gradient(var(--line) 0 8px,transparent 8px 14px)}
+.month{position:relative;margin-bottom:30px}
+.month>.dot{position:absolute;left:-34px;top:2px;width:26px;height:26px;border-radius:50%;background:var(--card);border:4px solid var(--blue);display:grid;place-items:center;font-size:12px}
+.month.cur>.dot{border-color:var(--org);box-shadow:0 0 0 6px rgba(244,123,62,.25)}
+.mh{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.mh h2{margin:0;font-size:24px}
+.theme{color:var(--mute);margin:2px 0 12px;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 16px;margin-bottom:10px}
+.card h3{margin:0 0 4px;font-size:16px}
+.card p{margin:0;color:var(--mute);font-size:14px}
+.card .en{font-size:12.5px;opacity:.85;margin-top:3px}
+.date{display:inline-block;background:var(--sea);color:var(--blue);border-radius:10px;padding:1px 9px;font-size:12.5px;font-weight:700;margin-right:6px}
+.hero{border-left:6px solid var(--org)}
+.today{background:var(--org);color:#fff;border-radius:14px;padding:10px 14px;margin:0 0 12px;font-weight:500}
+h2.sec{margin:34px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.ch{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px}
+.ch b{display:block;font-size:15px}
+.ch span{font-size:12.5px;color:var(--mute);display:block;margin-top:4px}
+.ch em{font-style:normal;display:inline-block;margin-top:8px;background:var(--sun);color:#4a3f00;border-radius:8px;padding:1px 8px;font-size:12px;font-weight:500}
+.goal{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:16px}
+.goal div{background:var(--sea);color:var(--ink);border-radius:16px;padding:12px 14px;font-size:14px}
+.tbl{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}.tbl th{background:var(--sea);color:var(--blue);text-align:left;padding:7px 9px}.tbl td{padding:7px 9px;border-top:1px dashed var(--line)}.tbl-wrap{overflow-x:auto}.note{background:var(--sun);color:#4a3f00;border-radius:14px;padding:9px 13px;font-size:13px;margin-top:10px}.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.pills span{background:var(--sea);color:var(--blue);border-radius:99px;padding:3px 11px;font-size:12.5px;font-weight:500}.ag{margin:8px 0 0;padding:0;list-style:none}.ag li{font-size:13px;color:var(--mute);padding:3px 0;border-top:1px dashed var(--line)}.ag b{color:var(--org)}
+footer{text-align:center;color:var(--mute);font-size:13px;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<small>JC COLLECTION · BAYPHERE × HOJO</small>
+<h1>Q4 Roadmap<br>ต.ค. – ธ.ค. 2026</h1>
+<p>“Two Hotels. One Beach. More Reasons to Stay”</p>
+<svg class="wave" viewBox="0 0 400 24" preserveAspectRatio="none"><path d="M0 12 Q25 0 50 12 T100 12 T150 12 T200 12 T250 12 T300 12 T350 12 T400 12" fill="none" stroke="#FFE83A" stroke-width="4" stroke-linecap="round"/></svg>
+</header>
+
+<div class="goal">
+<div>💰 <b>จองตรง</b><br>เลี่ยงค่าคอม OTA คุม ADR</div>
+<div>🍽️ <b>รายได้ F&amp;B</b><br>แพ็กเกจรวม + พรีเซลล์</div>
+<div>🎆 <b>อีเวนต์</b><br>TTT #80 และ Fireworks</div>
+</div>
+
+<div class="legend"><span class="chip done">✓ เสร็จแล้ว</span><span class="chip now">● กำลังดำเนินการ</span><span class="chip next">○ กำลังจะมา</span></div>
+
+<div class="tl">
+
+<section class="month">
+<div class="dot">🎃</div>
+<div class="mh"><h2>ตุลาคม</h2><span class="chip done">ผ่านไปแล้ว</span></div>
+<div class="theme">Tactical Launch &amp; Creative F&amp;B Upselling · เปิดตัวแพ็กเกจ F&amp;B</div>
+<div class="card"><h3>📦 ดันแพ็กเกจเด่น 3 ตัว</h3><p><b>Stay2 Save More</b> พัก 2 คืน แถม Afternoon Tea + Moo Kratha ริมหาด · <b>Flexi Stay</b> พัก 1 คืน เลือกแถม 1 ชุด (Afternoon Tea / Moo Kratha / Pizza &amp; Beer) · <b>Direct Best Rate + ABF</b> ดันยอดจองตรงวันธรรมดา แถม Signature Pizza เมื่อจองผ่านเว็บไซต์</p><div class="en">Stay2 Save More · Flexi Stay · Direct Best Rate + ABF</div></div>
+<div class="card"><h3>🎬 Reels และ Retargeting</h3><p>วิดีโอ Seafood Buffet / Afternoon Tea เจาะครอบครัวและคู่รัก พร้อมโฆษณาตามกลุ่มครอบครัวช่วงปิดเทอม</p></div>
+<div class="card"><h3>🌅 “Sunset, Pizza &amp; Brew”</h3><p>ปรับคู่พิซซ่า + เบียร์ ให้เป็นประสบการณ์ชมพระอาทิตย์ตกริมหาด (ธีมปลายฤดูฝน)</p></div>
+<div class="card hero"><h3><span class="date">30–31 ต.ค.</span>Halloween Weekend</h3><p>ของหวานหรือม็อกเทลป๊อปอัปฟรีสำหรับผู้จองตรงแพ็กเกจ Stay2 หรือ Flexi Stay สร้างกระแสโซเชียล · <b>ประกวดคอสตูม:</b> ถ่ายรูป/วิดีโอในชุดฮาโลวีนในโรงแรม โพสต์ FB/IG/TikTok แท็ก @baypherehotelpattayajc #BaypherehotelPattayaJC #HalloweenCostumes ผู้ที่ได้ไลก์/เอ็นเกจเมนต์มากสุดหรือสร้างสรรค์สุดรับบัตร F&amp;B 1,000 บาท (ใช้ได้ในห้องอาหารและบาร์ของโรงแรมช่วง 30–31 ต.ค.)</p></div>
+</section>
+
+<section class="month cur">
+<div class="dot">🔥</div>
+<div class="mh"><h2>พฤศจิกายน</h2><span class="chip now">เดือนนี้</span></div>
+<div class="theme">High-Volume Drive &amp; Destination Marketing · ดันยอดปริมาณสูง</div>
+<div class="today">📍 วันนี้ 17 พ.ย.</div>
+<div class="card"><h3><span class="date">7–8 พ.ย.</span>LEOFEST @ Legend Siam</h3><p>อยู่ในหัวข้อ Collaboration – Partnerships ของต้นฉบับ · Social Media On &amp; Offline Campaign (ผ่านไปแล้ว)</p></div>
+<div class="card hero"><h3>🏷️ Thai Tiew Thai #80</h3><p>แบรนด์เป็น “Best Price of the Year” ออนไลน์ 100% ไม่มีบูธ · ยิงหา Custom Audience, LINE OA และ Lookalike ล่วงหน้า 5–7 วัน</p><div class="en">ต้นฉบับไม่ได้ระบุวันที่ของแคมเปญนี้</div></div>
+<div class="card"><h3>🎟️ เปิดพรีเซลล์ Early Bird</h3><p>ดินเนอร์ Christmas Eve และ NYE ผ่านเว็บไซต์และ LINE OA ลด 10–15% ล็อกกระแสเงินสดล่วงหน้า</p></div>
+<div class="card hero"><h3><span class="date">27–28 พ.ย.</span>Pattaya International Fireworks</h3><p>แพ็กเกจห้องพัก + ตั๋วเรือยอชท์ 2 ใบ ชมพลุกลางทะเล · ผลิตวิดีโอ POV “Watching Pattaya Fireworks from a Luxury Yacht”</p></div>
+</section>
+
+<section class="month">
+<div class="dot">🎄</div>
+<div class="mh"><h2>ธันวาคม</h2><span class="chip next">กำลังจะมา</span></div>
+<div class="theme">Festive Season &amp; High-Season Revenue · เพิ่มรายได้ช่วงไฮซีซัน</div>
+<div class="card"><h3>📈 ดัน ADR ช่วงวันพีค</h3><p>ลดโควตาห้องรายวัน เน้นช่องทางจองตรง ตัดค่าคอม OTA</p></div>
+<div class="card"><h3><span class="date">5–7 ธ.ค.</span>วันพ่อ Long Weekend</h3><p>“Family Dining Treat” ส่วนลด F&amp;B หรือเครื่องดื่ม/ของหวานฟรี สำหรับ Seafood Buffet และ Afternoon Tea</p></div>
+<div class="card"><h3><span class="date">11–13 ธ.ค.</span>Tomorrowland Thailand</h3><p>อยู่ในหัวข้อ Collaboration – Partnerships ของต้นฉบับ · Social Media On &amp; Offline Campaign · Wisdom Valley</p></div>
+<div class="card hero"><h3><span class="date">24 ธ.ค.</span>Christmas Eve Dinner</h3><p>ข้อเสนอห้องพักแบบบังคับหรือรวมดินเนอร์ (Christmas Eve และ NYE Gala/Countdown) ดัน F&amp;B สู่จุดสูงสุดของปี</p></div>
+<div class="card hero"><h3><span class="date">31 ธ.ค.</span>Sunset Sprite · New Year Countdown 2027</h3><p>ดาดฟ้าสีส้ม–ชมพู–เหลือง–แดง ดเรสโค้ดตามโทนสี</p><ul class="ag"><li><b>19:00</b> เปิดดาดฟ้า เริ่มแพ็กเกจเครื่องดื่มและบุฟเฟ่ต์กาลาดินเนอร์</li><li><b>20:00</b> DJ เริ่มเล่น</li><li><b>23:45</b> ไวน์สปาร์กลิงฟรี 1 แก้ว เดินไปขอบสระชมพลุ</li><li><b>00:00</b> นับถอยหลังและพลุ</li><li><b>01:00</b> ปิดคาชบาร์ (Cash bar) · DJ performance and … (ข้อความต้นฉบับถูกตัดท้าย)</li></ul></div>
+</section>
+</div>
+
+<h2 class="sec">📣 ช่องทางดิจิทัลที่ทำงานตลอดไตรมาส</h2>
+<div class="grid">
+<div class="ch"><b>Meta Ads</b><span>วิดีโอไลฟ์สไตล์เน้นแพ็กเกจ F&amp;B + Retargeting ผู้เข้าเว็บที่ยังไม่จอง</span><em>Engagement Rate · ROAS &gt; 8–10x</em></div>
+<div class="ch"><b>LINE OA</b><span>Flash Sale TTT #80 และ Early Bird</span><em>Direct Conversion Rate · Repeat Bookings</em></div>
+<div class="ch"><b>Google Search</b><span>คำค้นเจตนาสูง เช่น “Pattaya fireworks hotel”, “Pattaya beach resort with Moo Kratha”</span><em>High-Intent Traffic · Direct Booking Conversions</em></div>
+<div class="ch"><b>TikTok</b><span>Moo Kratha, Afternoon Tea, ยอชท์ เจาะ Gen Y/Z</span><em>Video Views &amp; Social Engagement</em></div>
+<div class="ch"><b>KOL / UGC</b><span>Barter 3–5 เพจ/เดือน และ 3–5 Howard Johnson/เดือน (รวมอินฟลูเอนเซอร์) · รูป 50–70 ภาพต่อทริป</span></div>
+<div class="ch"><b>AI · GEO · AEO</b><span>FAQ แบบ Answer-First, Voice Search</span></div>
+</div>
+
+<h2 class="sec">🧭 ธีมและกลยุทธ์ภาพรวม</h2>
+<div class="card hero"><h3>🌿 Nature to Explore. Fun to Share.</h3><p>ชวนแขกสำรวจธรรมชาติและแบ่งปันความสนุก: ปั่นจักรยาน พายคายัค เดินชมธรรมชาติ กีฬาทางน้ำ เกมชายหาด และมื้ออาหารร่วมกัน พร้อมบันทึกช่วงเวลาที่น่าจดจำ</p></div>
+<div class="grid">
+<div class="ch"><b>📢 สร้างการรับรู้</b><span>สื่อสารผ่านไลฟ์สไตล์ ไม่ใช่แค่ห้องพัก: โซเชียล PR อินฟลูเอนเซอร์ เทศกาลพัทยา</span></div>
+<div class="ch"><b>✨ สร้างความแตกต่าง</b><span>โรงแรมริมหาด ธรรมชาติ ความสนุก และการพักผ่อน</span></div>
+<div class="ch"><b>📸 ขายประสบการณ์</b><span>ขายความทรงจำแทนห้องพัก</span></div>
+<div class="ch"><b>🛒 จองตรง</b><span>เพิ่มยอดผ่านช่องทางของโรงแรมเอง</span></div>
+<div class="ch"><b>🤝 ผูกพันกับแขก</b><span>สร้างความสัมพันธ์ก่อน ระหว่าง และหลังเข้าพัก</span></div>
+<div class="ch"><b>💛 ความภักดี</b><span>ข้อเสนอเฉพาะบุคคล โปรแกรมสมาชิก สิทธิ์แขกที่กลับมา</span></div>
+</div>
+<div class="card"><h3>💗 Emotional Marketing: “ขายความรู้สึกที่แขกจะได้รับ”</h3><div class="pills"><span>ผ่อนคลาย</span><span>กลับมาเชื่อมต่อ</span><span>สนุก</span><span>หลีกหนี</span></div><p style="margin-top:8px">ช่องทาง: เว็บไซต์ (แปลงเป็นจองตรง) · โซเชียล (ภาพ วิดีโอ เรื่องราวแขก) · อีเมล (ข้อเสนอตามฤดูกาล) · ป้ายในโรงแรม · การสื่อสารกับแขกก่อนมา ต้อนรับ และหลังพัก</p></div>
+
+<h2 class="sec">🤳 แผน KOL และ Barter</h2>
+<div class="grid">
+<div class="ch"><b>Bayphere</b><span>Deluxe + ABF</span><em>2,000 บาท/คืน</em><span>Executive Ocean + ABF</span><em>5,000 บาท/คืน</em></div>
+<div class="ch"><b>HoJo</b><span>Superior + ABF</span><em>1,778 บาท/คืน</em></div>
+<div class="ch"><b>เกณฑ์ผู้ติดตาม</b><span>TikTok ไม่ต่ำกว่า 30K · 100K ขึ้นไปสำหรับ FB&amp;IG, Xiaohongshu, Douyin, Google, Google Map, TripAdvisor, เว็บบล็อก · Lemon8 เป็นข้อได้เปรียบ (ประโยคต้นฉบับ “…AND LEMON8 IS A PLUS” อ่านได้สองแบบ)</span></div>
+<div class="ch"><b>เป้าหมาย/เดือน</b><span>3–5 เพจ/เดือน และ 3–5 Howard Johnson/เดือน (รวมอินฟลูเอนเซอร์) · เน้นลูกค้าไทยหรือรัสเซีย และ KOL วัยเกษียณ · ต้นทุนรวมที่พัก + Half-board</span><em>F&amp;B 2,000–3,000 / บล็อกเกอร์</em><em>F&amp;B 4,000–10,00_ / อินฟลูเอนเซอร์ (ตัวเลขต้นฉบับพิมพ์ไม่ครบ)</em></div>
+</div>
+<div class="card"><h3>🎟️ ตาราง Tier (Half-board ทุกระดับ)</h3><div class="tbl-wrap"><table class="tbl"><tr><th>สัญชาติ</th><th>ผู้ติดตาม</th><th>ของแลก (ใช้ได้ 1 ปี)</th></tr><tr><td>ไทย</td><td>&lt; 30,000</td><td>Deluxe 1–2 ใบ</td></tr><tr><td>ไทย</td><td>30,001–100,000</td><td>Deluxe 3–5 ใบ</td></tr><tr><td>ไทย</td><td>&gt; 100,001</td><td>Executive Garden 1–5 ใบ</td></tr><tr><td>ต่างชาติ</td><td>&lt; 50K · 50–100K · &gt; 100K</td><td>ไม่มี voucher (ขึ้นกับการยอมรับ)</td></tr></table></div><p style="margin-top:8px">บล็อกเกอร์อนุญาตใช้ภาพ/วิดีโอเชิงพาณิชย์ และส่งรูปความละเอียดสูง 50–70 ภาพต่อทริป</p><div class="note">⚠️ ตามต้นฉบับ: voucher (Bayphere &amp; HoJo) หน้า 23 ระบุ “Deluxe, Exclusive Garden” แต่หน้า 24 ระบุ “Executive Garden” · ตารางมีแถว &lt; 30,000 ทั้งที่เกณฑ์ TikTok ขั้นต่ำคือ 30K · คอลัมน์ Hotel / F&amp;B / F&amp;B Focus Promotion ในตารางต้นฉบับยังว่าง</div></div>
+
+<h2 class="sec">📸 Trendy Hotel: ออกแบบให้ถ่ายแล้วไวรัล</h2>
+<p class="theme">เป้าหมาย Thai FIT · แบรนด์ Modern Luxury, Comfort, Urban Marine · “Wow factor” สำหรับ TikTok, FB, IG</p>
+<div class="grid">
+<div class="ch"><b>📷 Photogenic Corner</b><span>แขกเช็คอินเข้าไปใน “เรื่องราว” ทุกห้องควรมี Hero Spot อย่างน้อย 1 จุด</span></div>
+<div class="ch"><b>🧶 Content Moments (DIY)</b><span>เปลี่ยนสิ่งอำนวยความสะดวกให้โต้ตอบได้ (ภาพตัวอย่างหน้า 26: งานเครื่องหนังและสร้อยลูกปัดเปลือกหอย)</span></div>
+<div class="ch"><b>💡 Smart Lighting</b><span>แสงคือความต่างระหว่างภาพ “ดี” กับ “ไวรัล”</span></div>
+<div class="ch"><b>🧼 Invisible Tech</b><span>เทคโนโลยีซ่อนเรียบ พื้นผิวไฮเอนด์ ลดความรก</span></div>
+<div class="ch"><b>🥚 Easter Eggs</b><span>รายละเอียดดีไซน์ให้แขกแท็กเอง · วางแบรนด์แบบซ่อนใส่ชื่อ JC Hotel Group</span></div>
+</div>
+
+<h2 class="sec">🤖 ดิจิทัลมาร์เก็ตติ้งและ AI</h2>
+<div class="pills"><span>Google Ads &amp; วิเคราะห์</span><span>จัดการคีย์เวิร์ดเชิงกลยุทธ์</span><span>โปรโมตบนแพลตฟอร์ม AI (GEO)</span><span>Visual AI Optimization</span><span>Voice Search Optimization</span><span>กลยุทธ์ AI ขั้นสูง (GEO)</span><span>FAQ แบบ Answer-First (AEO)</span></div>
+
+<h2 class="sec">🍴 F&amp;B และครัว: เทรนด์ 2026</h2>
+<div class="card hero"><h3>Narrative Dining</h3><p>กระบวนการปรุงและเสิร์ฟกลายเป็นส่วนหนึ่งของความบันเทิง · เน้น “Modern Heritage” (นำของดั้งเดิมมาเล่าใหม่) และ “Sensory Experience” ผ่านภาพลักษณ์และวิดีโอสั้น</p><div class="en">ต้นฉบับพูดถึง “two signature dishes” แต่ไม่ได้ระบุเมนู</div></div>
+
+<footer>🌊 Natural Living. Endless Fun.<br>สถานะอ้างอิงวันที่ 17 พ.ย. 2026 · ต้นฉบับไม่ระบุวันที่ของดินเนอร์ Christmas Eve / NYE (24 และ 31 ธ.ค. เป็นวันตามปฏิทิน) · หน้า 19 ของต้นฉบับเขียน “Festive Season 2027” แต่หน้า 32 เขียน Q4 2026 หน้านี้จึงใช้ 2026</footer>
+</div>
+</body>
+</html>
